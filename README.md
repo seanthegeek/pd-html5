@@ -36,7 +36,7 @@ This is the first web application and Pd patch that I have written. As a result,
 Architecture
 --------------- 
 
-jQuery Mobile generates the mobile (and developer) friendly web interface. When a user interacts with one of the UI element, a jQuery JavaScript event is triggered, and the request is passed to the web server. The web client also continually polls for changes in the music player's current controls every five seconds, and responds accordingly. As a result, multiple clients are able to view and control the music player settings at the same time. The ability of web applications to make and respond to requests is known as AJAX. Jquery and jQuery Mobile are included in the distribution of this project so that it may be used in an environment without an internet connection.
+jQuery Mobile generates the mobile (and developer) friendly web interface. When a user interacts with one of the UI elements, a jQuery JavaScript event is triggered, and the request is passed to the web server. The web client also continually polls for changes in the music player's current controls every five seconds, and responds accordingly. As a result, multiple clients are able to view and control the music player settings at the same time. The ability of web applications to make and respond to requests is known as AJAX. Jquery and jQuery Mobile are included in the distribution of this project so that it may be used in an environment without an internet connection.
 
 CherryPy is a Python micro-framework for web development. It serves the HTM 5 client to the user agents (web browsers), and responds to their requests. If the user agent has requested a music player change, the request is passed along by the web server to Pd via a local TCP connection on port 3000. 
 
