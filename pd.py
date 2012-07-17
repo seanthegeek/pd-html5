@@ -92,13 +92,3 @@ class Client(object):
             self._send("set reverb %d" % reverb)
         else:
             raise ValueError("Reverb must be between 0 and 100")
-
-    def set_waveform_enabled(self, enabled):
-        """
-        Tells the server to start or stop refreshing the vaveform
-        @param enambled: A boolean
-        """
-        if enabled is True:
-            self._send("set waveform %d" % 1)
-        else:
-            self._send("set waveform %d" % 0)
