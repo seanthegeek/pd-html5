@@ -70,19 +70,19 @@ $(document).bind('pageinit', function(event) {
 		alert("The demonstration has ended.");
 	});
 	
-	start.bind( "click", function(event, ui) {
+	start.bind("click", function(event, ui) {
 		$.get("play", {value: track.val()});
 		});
 		
-	pause.bind( "click", function(event, ui) {
+	pause.bind("click", function(event, ui) {
 		$.get("pause");
 	});
 	
-	volume.bind( "change", function(event, ui) {
+	volume.bind("change", function(event, ui) {
 		$.get("set_volume", {value: volume.attr("value")});
 	});
 	
-	reverb.bind( "change", function(event, ui) {
+	reverb.bind("change", function(event, ui) {
 		$.get("set_reverb", {value: reverb.attr("value")});
 	});
 	
